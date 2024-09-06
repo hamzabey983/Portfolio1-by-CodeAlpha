@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <header class="header">
+         <a href="#" class="logo"><span>Ham</span>za
+        </a>
+
+        <nav class="navbar">
+            <a href="#" class="active">Portfolio</a>
+            <a href="#">Services</a>
+            <a href="#">Experince</a>
+            <a href="#">Project</a>
+            <a href="#">Education</a>
+        </nav>
+        
+        <a href="#" class="contact">Contact Me</a>
+
+    </header>
+    
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Hi</h3>
+            <h1>I'm <span>Hamza <br></span></h1>
+      
+      <span id="typing-animation"></span>
+      <script>
+        const typingAnimationElement = document.getElementById('typing-animation');
+        const typingTexts = [
+        'Frontend Developer ',
+        'Web Developer  ',
+        ' Web Designer ',
+        ];
+  
+        function playTypingAnimation(text) {
+       
+        for (let i = 0; i < text.length; i++) {
+            setTimeout(() => {
+            typingAnimationElement.textContent += text[i];
+            }, i * 200); 
+        }
+  
+        setTimeout(() => {
+            typingAnimationElement.textContent = '';
+            playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+        }, text.length * 200);
+        }
+  
+        playTypingAnimation(typingTexts[0]);
+  
+        </script>
+        <p>    Hello, I’m Hamza, a passionate Frontend Developer with 0.5 years of experience in creating responsive and user-friendly web applications. I specialize in HTML, CSS, and JavaScript, with a strong proficiency in frameworks like Bootstrap </p>
+            <div class="btn-box">
+                <button class="btn-1">Hire Me</button>
+                <button class="btn-2">Experince</button>
+            </div>
+            
+        </div>
+        <div class="image-box">
+            <img src="image.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="about">
+
+        <div class="about-img">
+            <img src="image.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend <span>Developer</span></h3>
+            <p>Hello, I’m Hamza, a passionate Frontend Developer with 0.5 years of experience in creating responsive and user-friendly web applications. I specialize in HTML, CSS, and JavaScript, with a strong proficiency in frameworks like Bootstrap</p>
+            <p>With a background in WEB development, I have worked on diverse projects ranging from e-commerce platforms to interactive web applications. My goal is to leverage my skills to build impactful and innovative solutions.</p>
+            <p>When I’m not coding, you can find me @hamie_zulfiqar. Feel free to reach out to me at hg7454581@gmail.com or connect with me on <a href="https://www.linkedin.com/in/muhammad-hamza-07179931b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a>.</p>
+            <a href="#" class="btn-2">Experince</a>
+        </div>
+
+    </section>
+    
+    <section class="skills">
+        <div class="skill-mf">
+            <p class="title-s">Skills</p>
+            <span>HTML</span> <span class="pull-right">75%</span>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+            <span>CSS</span> <span class="pull-right">70%</span>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+            <span>JS</span> <span class="pull-right">65%</span>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+            <span>Tailwind Css</span> <span class="pull-right">65%</span>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+            <span>Bootstrap</span> <span class="pull-right">80%</span>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+    </section>
+    <section class="contact-form">
+        <h2 class="contact-me">Contact <span>Me</span></h2>
+        
+        <form action="#">
+
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="E mail">
+            </div>
+
+            <div class="input-box">
+                <input type="numb" placeholder="Phone Number">
+                <input type="text" placeholder="Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn-1">
+        </form>
+    </section>
+
+    <footer class="footer">
+
+        <div class="social">
+          <a href="https://www.facebook.com/profile.php?id=100028475483276"><i class='bx bxl-facebook-circle'></i></a>
+          <a href="https://www.linkedin.com/in/muhammad-hamza-07179931b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class='bx bxl-linkedin-square'></i> </a>
+          <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="https://www.instagram.com/hamie_zulfiqar?igsh=ZDJoaHRxY3l0OTBy&utm_source=qr"><i class='bx bxl-instagram-alt'></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">About Me</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+
+        <p class="copyright">© 2024 | All Rights Reserved</p> 
+    </footer>
+</body>
+</html>
